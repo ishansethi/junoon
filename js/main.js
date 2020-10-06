@@ -1,7 +1,7 @@
 AOS.init({
   duration: 600
 });
-  
+
 
 (function($) {
 
@@ -20,7 +20,7 @@ AOS.init({
 
   // loader
   var loader = function() {
-    setTimeout(function() { 
+    setTimeout(function() {
       if($('#loader').length > 0) {
         $('#loader').removeClass('show');
       }
@@ -35,7 +35,7 @@ AOS.init({
     $(".smoothscroll[href^='#'], #ftco-navbar ul li a[href^='#']").on('click', function(e) {
       e.preventDefault();
       var hash = this.hash;
-        
+
       $('html, body').animate({
 
         scrollTop: $(hash).offset().top
@@ -63,17 +63,17 @@ AOS.init({
 
     if (st > 150) {
       if ( !navbar.hasClass('scrolled') ) {
-        navbar.addClass('scrolled');  
+        navbar.addClass('scrolled');
       }
-    } 
+    }
     if (st < 150) {
       if ( navbar.hasClass('scrolled') ) {
         navbar.removeClass('scrolled sleep');
       }
-    } 
+    }
     if ( st > 350 ) {
       if ( !navbar.hasClass('awake') ) {
-        navbar.addClass('awake'); 
+        navbar.addClass('awake');
       }
     }
     if ( st < 350 ) {
@@ -83,7 +83,7 @@ AOS.init({
       }
     }
 
-  }); 
+  });
 
 
   $('.js-site-nav-toggle').on('click', function(e) {
@@ -91,7 +91,7 @@ AOS.init({
     var $this = $(this);
     e.preventDefault();
 
- 
+
 
     if ( $('body').hasClass('menu-open') ) {
       $this.removeClass('active');
@@ -104,7 +104,7 @@ AOS.init({
 
           // $(this).removeClass('is-show');
         });
-      
+
       setTimeout(function() {
         // $('.site-menu').fadeOut(400);
         $('.site-menu').removeClass('site-menu-show');
@@ -128,13 +128,13 @@ AOS.init({
 
         });
       }, 500);
-      
+
     }
 
   });
 
 
-	
+
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
 		$this.addClass('show');
@@ -286,15 +286,15 @@ AOS.init({
   $('#time').timepicker();
 
 
-  //------- Google Map  js --------//  
+  //------- Google Map  js --------//
 
     if (document.getElementById("map")) {
         google.maps.event.addDomListener(window, 'load', init);
 
         function init() {
             var mapOptions = {
-                zoom: 11,
-                center: new google.maps.LatLng(40.6700, -73.9400), // New York
+                zoom: 16,
+                center: new google.maps.LatLng(-37.856208, 145.027297), // New York
                 styles: [{
                     "featureType": "water",
                     "elementType": "geometry",
@@ -307,7 +307,7 @@ AOS.init({
                     "featureType": "landscape",
                     "elementType": "geometry",
                     "stylers": [{
-                        "color": "#f5f5f5"
+                        "color": "green"
                     }, {
                         "lightness": 20
                     }]
@@ -315,7 +315,7 @@ AOS.init({
                     "featureType": "road.highway",
                     "elementType": "geometry.fill",
                     "stylers": [{
-                        "color": "#ffffff"
+                        "color": "black"
                     }, {
                         "lightness": 17
                     }]
@@ -412,10 +412,11 @@ AOS.init({
                     }]
                 }]
             };
+            
             var mapElement = document.getElementById('map');
             var map = new google.maps.Map(mapElement, mapOptions);
             var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(40.6700, -73.9400),
+                position: new google.maps.LatLng(-37.856208, 145.027297),
                 map: map,
                 title: 'Snazzy!'
             });
