@@ -5,6 +5,19 @@
     <title>Junoon Indian Restaurant &mdash; A fine dining experience</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+    .carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+    </style>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700,800|Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/animate.css">
@@ -30,50 +43,99 @@
 
     <div class="site-wrap">
 
-      <nav class="site-menu" id="ftco-navbar-spy">
-        <div class="site-menu-inner" id="ftco-navbar">
-          <ul class="list-unstyled">
-            <li><a href="#section-home">Home</a></li>
-            <li><a href="#section-about">About Us</a></li>
-            <li><a href="#section-menu">Our Menu</a></li>
-            <li><a href="#section-reservation">Reserve A Table</a></li>
-            <li><a href="#section-contact">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <header class="site-header">
-        <div class="row align-items-center">
-          <div class="col-5 col-md-3">
-
-          </div>
-          <div class="col-2 col-md-6 justify-content-center text-center site-logo-wrap">
-            <!-- <a href="index.html" class="site-logo">Junoon Indian Restaurant</a> -->
-            <!-- <a href="tel:03-9822-5620" class="smoothscroll site-logo btn btn-outline-red px-5 py-3">Call Us - (03) 9822 5620</a> -->
-          </div>
-
-          <div class="col-5 col-md-3 text-right menu-burger-wrap">
-            <a href="#" class="site-nav-toggle js-site-nav-toggle"><i></i></a>
-
-          </div>
-        </div>
-
-      </header> <!-- site-header -->
+  <!-- site-header -->
 
       <div class="main-wrap " id="section-home">
 
-        <div class="cover_1 overlay bg-light">
-          <div class="img_bg" style="background-image: url(images/slider-1.jpg);" data-stellar-background-ratio="0.5">
+        <!-- Navigation -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Junoon Indian Restaurant</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#section-home">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section-about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section-menu">Our Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section-reservation">Reservation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section-contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header  data-aos="fade-up">
+
+</div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('images/slider-1.jpg')">
+        <div class="carousel-caption d-none d-md-block" style="bottom:280px">
             <div class="container">
               <div class="row align-items-center justify-content-center text-center">
                 <div class="col-md-10" data-aos="fade-up">
-                  <h2 class="heading mb-5"></span><span style="color: #ff9933">Junoon</span> Indian <span style="color: #12890b">Restaurant</span> <span class="fas fa-utensils" ></h2>
+                  <h2 class="display-4"></span><span style="color: #ff9933">Junoon</span><span style="color: #ffffff"> Indian</span> <span style="color: #12890b">Restaurant</span> <span class="fas fa-utensils" style="color: #ffffff"></h2>
                   <p><a href="#section-reservation" class="smoothscroll btn btn-outline-white px-5 py-3">Reserve A Table</a>  <a href="https://yourorder.online/junoon/" target="_blank" class="smoothscroll btn btn-outline-white px-5 py-3">Order Food</a></p>
                 </div>
               </div>
             </div>
-          </div>
+
         </div>
+        <!-- <div class="carousel-caption  d-md-block">
+          <h2 class="heading mb-5"></span><span style="color: #ff9933">Junoon</span> Indian <span style="color: #12890b">Restaurant</span> <span class="fas fa-utensils" ></h2>
+                 <p><a href="#section-reservation" class="smoothscroll btn btn-outline-white px-5 py-3">Reserve A Table</a>  <a href="https://yourorder.online/junoon/" target="_blank" class="smoothscroll btn btn-outline-white px-5 py-3">Order Food</a></p>
+        </div> -->
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+        <div class="carousel-caption  d-md-block" style="bottom:450px">
+          <h2 class="display-4">Second Slide</h2>
+          <p class="lead">This is a description for the second slide.</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+        <div class="carousel-caption d-none d-md-block" style="bottom:450px">
+          <h2 class="display-4">Third Slide</h2>
+          <p class="lead">This is a description for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  </div>
+</header>
+
+
+
+
 
         <div class="section"  data-aos="fade-up">
           <div class="container">
@@ -209,7 +271,7 @@
                     <div class="col-md-8 text-center">
                       <h2 class="heading mb-3">Dine - In <span style="color: #ff7a5c">Menu</span></h2>
                       <p class="sub-heading mb-5">Our <span style="color: #ff7a5c">customized</span> menu just for you.</p>
-                            <a href="https://online.anyflip.com/znync/cebh/"  class="btn btn-primary btn-outline-primary" target="_blank">View Full Menu</a>
+                            <a  data-rel='fh5-light-box-demo' data-href='https://online.anyflip.com/znync/cebh/' href="#" data-width='550' data-height='450' data-title='Menu Junoon'  class="btn btn-primary btn-outline-primary" target="_blank">View Full Menu</a>
                             <a href="https://yourorder.online/junoon/"  class="btn btn-primary btn-outline-primary" target="_blank">Order Now</a>
                     </div>
                   </div>
@@ -590,8 +652,8 @@
                         </div>
                       </div>
                     </div>
-
                   </div>
+
                 </div>
               </div> <!-- .section -->
         <div class="section bg-white services-section" data-aos="fade-up">
@@ -945,6 +1007,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDw6UmJSbIyVdFGzZRvutTSBLsC8iBow8&sensor=false"></script>
+    <script src='//static.anyflip.com/plugin/LightBox/js/anyflp-light-box-api-min.js'></script>
 
     <script type="text/javascript">var submitted=false;</script>
         <script type="text/javascript">
